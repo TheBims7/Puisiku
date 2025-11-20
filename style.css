@@ -1,0 +1,146 @@
+body {
+    background: linear-gradient(75deg, #0aa4eb, #0abaf0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 510px;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.front-face, .back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ebf8f9;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    transition: transform 0.5s linear;
+}
+
+.listhor {
+    margin-top: 40%;
+    width: 100%;
+    height: 50px;
+    background: #f0b30a;
+}
+
+.listver {
+    right: 20%;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    background: #f0b30a;
+}
+
+.heart {
+    top: -7vh;
+    height: 90px;
+    width: 90px;
+    left: 39.5vh;
+    right: 90px;
+    background: #f20000;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20000;
+    animation: heart 1s linear infinite alternate-reverse;
+}
+
+@keyframes heart {
+    100% {
+        transform: rotate(-45deg) scale(1.3);
+    }
+}
+
+.heart:before {
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background: #f20000;
+    top: -50%;
+    left: 0%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20000;
+}
+
+.heart:after {
+    content: '';
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background: #f20000;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20000;
+}
+
+.label {
+    width: 160px;
+    height: 60px;
+    margin-top: 70px;
+    padding-left: 20px;
+    margin-left: 40px;
+    background: #ff0202;
+    color: white;
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 35px;
+    padding-top: 10px;
+    padding-right: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    padding-top: 15px;
+    color: #0d0d0d;
+}
+
+p {
+    padding: 10px 20px;
+    color: #262626;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.syair {
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.back-face {
+    transform: perspective(800px) rotateY(180deg);
+}
+
+.front-face {
+    transform: perspective(800px) rotateY(0deg);
+}
+
+.container:hover > .back-face {
+    transform: perspective(800px) rotateY(0deg);
+}
+
+.container:hover > .front-face {
+    transform: perspective(800px) rotateY(-180deg);
+}
+
+@media(max-width: 1200px){
+    .heart {
+        left: 34.5vh;
+    }
+}
