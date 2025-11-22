@@ -151,6 +151,13 @@ p {
         width: 90%;
     }
     .heart {
-        left: 35vh;
+        left: 34vh;
+    }
+    .label {
+        margin-left: 20px;
+    }
+    p {
+        font-size: 12px;
     }
 }
+
