@@ -148,9 +148,10 @@ p {
     }
     .container {
         width: 96%;
+        height: 450px;
     }
     .heart {
-        left: 30vh;
+        left: 28vh;
     }
     .label {
         margin-left: 30px;
@@ -162,6 +163,7 @@ p {
         font-size: 13px;
     }
 }
+
 
 
 
