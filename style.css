@@ -152,6 +152,16 @@ p {
     }
     .heart {
         left: 30vh;
+        height: 70px;
+        width: 70px;
+    }
+    .heart:before {
+        height: 70px;
+        width: 70px;
+    }
+    .heart:after {
+        height: 70px;
+        width: 70px;
     }
     .label {
         margin-left: 30px;
@@ -175,6 +185,7 @@ p {
         font-size: 13px;
     }
 }
+
 
 
 
