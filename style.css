@@ -151,7 +151,7 @@ p {
         height: 470px;
     }
     .heart {
-        left: 31vh;
+        left: 29vh;
     }
     .label {
         margin-left: 30px;
@@ -168,10 +168,14 @@ p {
     .container {
         height: 450px;
     }
+    .heart {
+        left: 30vh;
+    }
     p {
         font-size: 13px;
     }
 }
+
 
 
 
