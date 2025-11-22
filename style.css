@@ -147,16 +147,17 @@ p {
     body {
         background: #0aa4eb;
     }
-    /* .container {
-        width: 90%;
-    } */
+    .container {
+        width: 96%;
+    }
     .heart {
         left: 35vh;
         position: relative;
     }
     .label {
-        margin-left: 20px;
+        margin-left: 30px;
     }
 }
+
 
 
