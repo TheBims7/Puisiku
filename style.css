@@ -142,7 +142,7 @@ p {
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 440px){
     body {
         background: #0aa4eb;
     }
@@ -185,6 +185,7 @@ p {
         font-size: 13px;
     }
 }
+
 
 
 
