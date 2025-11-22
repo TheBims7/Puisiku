@@ -145,19 +145,18 @@ p {
 
 @media(max-width: 500px){
     body {
-        background-color: #0aa4eb;
+        background: #0aa4eb;
     }
-    .container {
+    /* .container {
         width: 90%;
-    }
+    } */
     .heart {
-        left: 34vh;
+        left: 35vh;
+        position: relative;
     }
     .label {
         margin-left: 20px;
     }
-    p {
-        font-size: 12px;
-    }
 }
+
 
